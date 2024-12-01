@@ -807,7 +807,7 @@ const Portfolio = () => {
       <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
         <div className="relative">
           <img 
-            src="/api/placeholder/600/400" 
+            src={require('./fitzhore.png')} 
             alt="Project Thumbnail" 
             className="w-full h-48 object-cover"
           />
@@ -815,12 +815,10 @@ const Portfolio = () => {
         </div>
         <div className="p-6">
           <h3 className="text-xl font-bold mb-3 text-cyan-400">
-            E-Commerce Website
+            Fitness Website
           </h3>
           <p className="text-gray-300 mb-4">
-            A full-stack e-commerce platform built with React, Node.js, and MongoDB.
-            Features include user authentication, product catalog, shopping cart, 
-            and secure payment integration.
+          Fitzhore is a dynamic platform connecting fitness enthusiasts with certified coaches. Users can set goals, explore coaches, book sessions, and track progress, while coaches manage profiles, packages, and payments. Admins oversee registrations, disputes, and platform reports. Built with React.js, Node.js, Express.js, MongoDB, and JWT authentication, Fitzhore ensures a secure, seamless, and professional fitness experience.
           </p>
           <div className="flex space-x-4">
             <a 
@@ -847,7 +845,7 @@ const Portfolio = () => {
       <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
         <div className="relative">
           <img 
-            src="/api/placeholder/600/400" 
+            src={require('./portfolio.png')} 
             alt="Project Thumbnail" 
             className="w-full h-48 object-cover"
           />
@@ -858,9 +856,7 @@ const Portfolio = () => {
             Personal Portfolio
           </h3>
           <p className="text-gray-300 mb-4">
-            Responsive personal portfolio website showcasing skills, projects, 
-            and professional experience. Built with React and Tailwind CSS, 
-            highlighting modern web development techniques.
+          A modern portfolio showcasing skills, projects, and experience, built with React.js and Tailwind CSS. The site features responsive design, smooth animations, project highlights, a professional timeline, and contact integration with GitHub and LinkedIn, demonstrating expertise in web development and design.
           </p>
           <div className="flex space-x-4">
             <a 
@@ -886,8 +882,8 @@ const Portfolio = () => {
       {/* Project 3 */}
       <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
         <div className="relative">
-          <img 
-            src="/api/placeholder/600/400" 
+        <img 
+            src={require('./Live stream.png')} 
             alt="Project Thumbnail" 
             className="w-full h-48 object-cover"
           />
@@ -895,12 +891,126 @@ const Portfolio = () => {
         </div>
         <div className="p-6">
           <h3 className="text-xl font-bold mb-3 text-cyan-400">
-            Task Management App
+            LiveStream Hub
           </h3>
           <p className="text-gray-300 mb-4">
-            A responsive task management application with user authentication, 
-            real-time updates, and drag-and-drop functionality. 
-            Built using React, Firebase, and Tailwind CSS.
+          An interactive live streaming app connecting creators and audiences in real-time. Built with React.js, Node.js, and WebRTC, it features live chat, user authentication, session scheduling, and high-quality, low-latency streaming for a seamless experience.
+          </p>
+          <div className="flex space-x-4">
+            <a 
+              href="https://your-task-app-link.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-cyan-400 text-gray-900 px-4 py-2 rounded-md hover:bg-cyan-500 transition duration-300"
+            >
+              Live Demo
+            </a>
+            <a 
+              href="https://github.com/yourusername/task-app-repo" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="border border-cyan-400 text-cyan-400 px-4 py-2 rounded-md hover:bg-cyan-400 hover:text-gray-900 transition duration-300"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+      {/* Project 4 */}
+      <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+        <div className="relative">
+          <img 
+            src={require('./Chatapp.png')} 
+            alt="Project Thumbnail" 
+            className="w-full h-48 object-cover"
+          />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div className="p-6">
+          <h3 className="text-xl font-bold mb-3 text-cyan-400">
+            Chat App
+          </h3>
+          <p className="text-gray-300 mb-4">
+          A real-time individual chat app built with React.js and Vite. It features seamless messaging, user authentication, and instant notifications, providing a fast and responsive communication experience.
+          </p>
+          <div className="flex space-x-4">
+            <a 
+              href="https://your-project-live-link.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-cyan-400 text-gray-900 px-4 py-2 rounded-md hover:bg-cyan-500 transition duration-300"
+            >
+              Live Demo
+            </a>
+            <a 
+              href="https://github.com/yourusername/project-repo" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="border border-cyan-400 text-cyan-400 px-4 py-2 rounded-md hover:bg-cyan-400 hover:text-gray-900 transition duration-300"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Project 5 */}
+      <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+        <div className="relative">
+          <img 
+            src={require('./Quiz app.png')} 
+            alt="Project Thumbnail" 
+            className="w-full h-48 object-cover"
+          />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div className="p-6">
+          <h3 className="text-xl font-bold mb-3 text-cyan-400">
+          QuizMaster
+          </h3>
+          <p className="text-gray-300 mb-4">
+          A quiz app built with React.js and Vite, offering an interactive and engaging way to test knowledge. Users can answer multiple-choice questions, track scores, and view results instantly. The app features a smooth, fast experience with Vite’s optimized build system, ensuring quick load times and a responsive design.
+          </p>
+          <div className="flex space-x-4">
+            <a 
+              href="https://your-portfolio-link.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-cyan-400 text-gray-900 px-4 py-2 rounded-md hover:bg-cyan-500 transition duration-300"
+            >
+              Live Demo
+            </a>
+            <a 
+              href="https://github.com/yourusername/portfolio-repo" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="border border-cyan-400 text-cyan-400 px-4 py-2 rounded-md hover:bg-cyan-400 hover:text-gray-900 transition duration-300"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Project 6 */}
+      <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+        <div className="relative">
+        <img 
+            src={require('./foodieapp.png')} 
+            alt="Project Thumbnail" 
+            className="w-full h-48 object-cover"
+          />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div className="p-6">
+          <h3 className="text-xl font-bold mb-3 text-cyan-400">
+          Foodie App
+          </h3>
+          <p className="text-gray-300 mb-4">
+          The Foodie App is a user-friendly platform built with React and styled using Tailwind CSS, offering an interactive experience for exploring recipes, ordering food, and sharing culinary tips. Its sleek, mobile-optimized design ensures seamless navigation, making it perfect for food enthusiasts and home cooks seeking convenience and inspiration.
           </p>
           <div className="flex space-x-4">
             <a 
