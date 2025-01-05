@@ -1,317 +1,3 @@
-// import React, { useState } from 'react';
-// import { Menu, X, Linkedin, Github, Mail, ArrowUp, ExternalLink } from 'lucide-react';
-
-// const Portfolio = () => {
-//   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-//   const navigation = [
-//     { name: 'Home', href: '#home' },
-//     { name: 'About', href: '#about' },
-//     { name: 'Education', href: '#education' },
-//     { name: 'Skills', href: '#skills' },
-//     { name: 'Contact', href: '#contact' },
-//   ];
-
-//   const socialLinks = [
-//     { icon: <Linkedin className="w-5 h-5" />, href: 'https://www.linkedin.com/in/loshavii-arulramesh' },
-//     { icon: <Github className="w-5 h-5" />, href: 'https://github.com/Loshavii' },
-//     { icon: <Mail className="w-5 h-5" />, href: 'https://medium.com/@larulramesh' },
-//   ];
-
-//   return (
-//     <div className="bg-slate-900 text-white min-h-screen">
-//       {/* Header */}
-//       <header className="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-lg">
-//         <nav className="container mx-auto px-6 py-4">
-//           <div className="flex items-center justify-between">
-//             <h1 className="text-2xl font-bold">
-//               Loshavii <span className="text-cyan-400">Arulramesh</span>
-//             </h1>
-            
-//             {/* Desktop Navigation */}
-//             <div className="hidden md:flex items-center space-x-8">
-//               {navigation.map((item) => (
-//                 <a
-//                   key={item.name}
-//                   href={item.href}
-//                   className="text-sm hover:text-cyan-400 transition-colors border-b-2 border-transparent hover:border-cyan-400"
-//                 >
-//                   {item.name}
-//                 </a>
-//               ))}
-//             </div>
-
-//             {/* Mobile Menu Button */}
-//             <button
-//               className="md:hidden text-white"
-//               onClick={() => setIsMenuOpen(!isMenuOpen)}
-//             >
-//               {isMenuOpen ? <X /> : <Menu />}
-//             </button>
-//           </div>
-
-//           {/* Mobile Navigation */}
-//           {isMenuOpen && (
-//             <div className="md:hidden mt-4 pb-4">
-//               {navigation.map((item) => (
-//                 <a
-//                   key={item.name}
-//                   href={item.href}
-//                   className="block py-2 text-sm hover:text-cyan-400"
-//                   onClick={() => setIsMenuOpen(false)}
-//                 >
-//                   {item.name}
-//                 </a>
-//               ))}
-//             </div>
-//           )}
-//         </nav>
-//       </header>
-
-//       {/* Hero Section */}
-//       <section id="home" className="pt-32 pb-20 px-6">
-//         <div className="container mx-auto">
-//           <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-//             <div className="flex-1">
-//               <h1 className="text-5xl md:text-7xl font-bold mb-4">
-//                 Hi, It's <span className="text-cyan-400">Loshavii</span>
-//               </h1>
-//               <h2 className="text-2xl md:text-3xl mb-6">Student Developer</h2>
-//               <p className="text-gray-300 mb-8 max-w-2xl">
-//                 Hi! I'm Loshavii, a creative and hardworking web developer with a passion for designing and
-//                 building user-centric websites. My work focuses on creating intuitive and dynamic user
-//                 experiences.
-//               </p>
-//               <div className="flex gap-4">
-//                 <a
-//                   href="mailto:larulramesh@gmail.com"
-//                   className="px-6 py-3 bg-cyan-400 text-black rounded-full hover:bg-cyan-300 transition-colors"
-//                 >
-//                   Hire Me
-//                 </a>
-//                 <a
-//                   href="#contact"
-//                   className="px-6 py-3 border-2 border-cyan-400 rounded-full hover:bg-cyan-400 hover:text-black transition-colors"
-//                 >
-//                   Let's Talk
-//                 </a>
-//               </div>
-//               <div className="flex gap-4 mt-8">
-//                 {socialLinks.map((link, index) => (
-//                   <a
-//                     key={index}
-//                     href={link.href}
-//                     className="p-2 border-2 border-cyan-400 rounded-full hover:bg-cyan-400 hover:text-black transition-colors"
-//                     target="_blank"
-//                     rel="noopener noreferrer"
-//                   >
-//                     {link.icon}
-//                   </a>
-//                 ))}
-//               </div>
-//             </div>
-//             <div className="flex-1 max-w-md">
-//               <div className="relative">
-//                 <img
-//                   src="/api/placeholder/400/400"
-//                   alt="Profile"
-//                   className="rounded-full w-full shadow-lg shadow-cyan-400/20"
-//                 />
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-
-      // {/* About Section */}
-      // <section id="about" className="bg-slate-800 py-20 px-6">
-      //   <div className="container mx-auto">
-      //     <h2 className="text-4xl font-bold text-center mb-16">
-      //       About <span className="text-cyan-400">Me</span>
-      //     </h2>
-      //     <div className="flex flex-col md:flex-row items-center gap-12">
-      //       <div className="flex-1 max-w-md">
-      //         <img
-      //           src="/api/placeholder/400/400"
-      //           alt="About"
-      //           className="rounded-full w-full shadow-lg shadow-cyan-400/20"
-      //         />
-      //       </div>
-      //       <div className="flex-1">
-      //         <h3 className="text-2xl font-bold mb-6">Student Developer</h3>
-      //         <p className="text-gray-300 mb-8">
-      //           I am a student developer with a solid foundation in computer science, proficient in Python, HTML, and
-      //           CSS, with a keen interest in web development, AI, and open-source contribution. I enjoy building web
-      //           and mobile applications using frameworks. My career goals include becoming a Full stack web
-      //           developer leading tech teams or starting my own tech company.
-      //         </p>
-      //         <button className="px-6 py-3 bg-cyan-400 text-black rounded-full hover:bg-cyan-300 transition-colors">
-      //           Read More
-      //         </button>
-      //       </div>
-      //     </div>
-      //   </div>
-      // </section>
-
-//       {/* Education Section */}
-//       <section id="education" className="py-20 px-6">
-//         <div className="container mx-auto">
-//           <h2 className="text-4xl font-bold text-center mb-16">
-//             Education & <span className="text-cyan-400">Experience</span>
-//           </h2>
-          
-//           <div className="max-w-3xl mx-auto space-y-8">
-//             {/* Timeline items */}
-//             <div className="relative pl-8 border-l-2 border-cyan-400">
-//               <div className="mb-12">
-//                 <span className="absolute -left-3 flex items-center justify-center w-6 h-6 bg-cyan-400 rounded-full">
-//                   <span className="w-3 h-3 bg-white rounded-full"></span>
-//                 </span>
-//                 <h3 className="text-xl font-bold mb-2">Uki Coding School</h3>
-//                 <span className="text-cyan-400 text-sm">2024</span>
-//                 <p className="mt-4 text-gray-300">
-//                   Currently enrolled at Uki Coding School, focusing on Full Stack Web development.
-//                   The curriculum covers HTML, CSS, JavaScript, Java, React, and Node.js.
-//                 </p>
-//               </div>
-              
-//               <div className="mb-12">
-//                 <span className="absolute -left-3 flex items-center justify-center w-6 h-6 bg-cyan-400 rounded-full">
-//                   <span className="w-3 h-3 bg-white rounded-full"></span>
-//                 </span>
-//                 <h3 className="text-xl font-bold mb-2">Technical College</h3>
-//                 <span className="text-cyan-400 text-sm">2023</span>
-//                 <p className="mt-4 text-gray-300">
-//                   Pursued NVQ-4 Certification in ICT Technician at Technical College of Jaffna.
-//                   Gained proficiency in programming languages and Microsoft Office management.
-//                 </p>
-//               </div>
-
-//               <div className="mb-12">
-//                 <span className="absolute -left-3 flex items-center justify-center w-6 h-6 bg-cyan-400 rounded-full">
-//                   <span className="w-3 h-3 bg-white rounded-full"></span>
-//                 </span>
-//                 <h3 className="text-xl font-bold mb-2">High School</h3>
-//                 <span className="text-cyan-400 text-sm">2021</span>
-//                 <p className="mt-4 text-gray-300">
-//                   Attended J/Uduvil Girls' College, excelled in mathematics, art, and computer science.
-//                   Participated in various extracurricular activities.
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-
-      // {/* Skills Section */}
-      // <section id="skills" className="bg-slate-800 py-20 px-6">
-      //   <div className="container mx-auto">
-      //     <h2 className="text-4xl font-bold text-center mb-16">
-      //       My <span className="text-cyan-400">Skills</span>
-      //     </h2>
-          
-      //     <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-      //       {/* Technical Skills */}
-      //       <div className="bg-slate-900 p-8 rounded-lg">
-      //         <h3 className="text-2xl font-bold mb-8 text-center">Technical Skills</h3>
-      //         <div className="grid grid-cols-2 gap-6">
-      //           {['Microsoft Office', 'Visual Basic', 'Adobe Photoshop', 'HTML', 'CSS'].map((skill) => (
-      //             <div key={skill} className="flex items-center gap-4 p-4 bg-slate-800 rounded-lg">
-      //               <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-      //               <span>{skill}</span>
-      //             </div>
-      //           ))}
-      //         </div>
-      //       </div>
-
-      //       {/* Interpersonal Skills */}
-      //       <div className="bg-slate-900 p-8 rounded-lg">
-      //         <h3 className="text-2xl font-bold mb-8 text-center">Interpersonal Skills</h3>
-      //         <div className="grid grid-cols-2 gap-6">
-      //           {['Creativity', 'Communication', 'Team Work', 'Leadership'].map((skill) => (
-      //             <div key={skill} className="flex items-center gap-4 p-4 bg-slate-800 rounded-lg">
-      //               <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-      //               <span>{skill}</span>
-      //             </div>
-      //           ))}
-      //         </div>
-      //       </div>
-      //     </div>
-      //   </div>
-      // </section>
-
-      // {/* Contact Section */}
-      // <section id="contact" className="py-20 px-6">
-      //   <div className="container mx-auto">
-      //     <h2 className="text-4xl font-bold text-center mb-16">
-      //       Contact <span className="text-cyan-400">Me</span>
-      //     </h2>
-          
-      //     <form className="max-w-2xl mx-auto space-y-6">
-      //       <div className="grid md:grid-cols-2 gap-6">
-      //         <input
-      //           type="text"
-      //           placeholder="Full Name"
-      //           className="w-full p-4 bg-transparent border-2 border-cyan-400 rounded-lg focus:outline-none focus:border-cyan-300"
-      //         />
-      //         <input
-      //           type="email"
-      //           placeholder="Email Address"
-      //           className="w-full p-4 bg-transparent border-2 border-cyan-400 rounded-lg focus:outline-none focus:border-cyan-300"
-      //         />
-      //       </div>
-            
-      //       <div className="grid md:grid-cols-2 gap-6">
-      //         <input
-      //           type="tel"
-      //           placeholder="Mobile Number"
-      //           className="w-full p-4 bg-transparent border-2 border-cyan-400 rounded-lg focus:outline-none focus:border-cyan-300"
-      //         />
-      //         <input
-      //           type="text"
-      //           placeholder="Email Subject"
-      //           className="w-full p-4 bg-transparent border-2 border-cyan-400 rounded-lg focus:outline-none focus:border-cyan-300"
-      //         />
-      //       </div>
-
-      //       <textarea
-      //         placeholder="Your Message"
-      //         rows="5"
-      //         className="w-full p-4 bg-transparent border-2 border-cyan-400 rounded-lg focus:outline-none focus:border-cyan-300"
-      //       ></textarea>
-
-      //       <button
-      //         type="submit"
-      //         className="w-full md:w-auto px-8 py-4 bg-cyan-400 text-black rounded-full hover:bg-cyan-300 transition-colors"
-      //       >
-      //         Send Message
-      //       </button>
-      //     </form>
-      //   </div>
-      // </section>
-
-      // {/* Footer */}
-      // <footer className="bg-slate-800 py-6">
-      //   <div className="container mx-auto px-6">
-      //     <div className="flex flex-col md:flex-row items-center justify-between">
-      //       <p className="text-sm text-gray-400">
-      //         Copyright © 2024 by Loshavii | All Rights Reserved.
-      //       </p>
-      //       <a
-      //         href="#home"
-      //         className="mt-4 md:mt-0 p-2 bg-cyan-400 rounded-full hover:bg-cyan-300 transition-colors"
-      //       >
-      //         <ArrowUp className="w-5 h-5 text-black" />
-      //       </a>
-      //     </div>
-      //   </div>
-      // </footer>
-//     </div>
-//   );
-// };
-
-// export default Portfolio;
-
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -640,10 +326,7 @@ const Portfolio = () => {
           >
             <h3 className="text-2xl font-bold mb-6 animate-pulse">Student Developer</h3>
             <p className="text-gray-300 mb-8">
-              I am a student developer with a solid foundation in computer science, proficient in Python, HTML, and
-              CSS, with a keen interest in web development, AI, and open-source contribution. I enjoy building web
-              and mobile applications using frameworks. My career goals include becoming a Full stack web
-              developer leading tech teams or starting my own tech company.
+            I am a student developer with a solid foundation in computer science, proficient in Python, HTML, and CSS, with a strong interest in web development and UI/UX design. I enjoy building web applications using frameworks and am passionate about Figma, constantly exploring innovative ways to enhance user experiences. My career goals include becoming a Full Stack Web Developer, leading tech teams, or starting my own tech company.
             </p>
             <motion.button 
               whileHover={{ scale: 1.05 }}
@@ -771,7 +454,7 @@ const Portfolio = () => {
             <div className="bg-slate-900 p-8 rounded-lg">
               <h3 className="text-2xl font-bold mb-8 text-center">Technical Skills</h3>
               <div className="grid grid-cols-2 gap-6">
-                {['Microsoft Office', 'Visual Basic', 'Adobe Photoshop', 'HTML', 'CSS', 'MERN Stack'].map((skill) => (
+                {['Microsoft Office', 'Visual Basic', 'Adobe Photoshop', 'HTML', 'CSS', 'MERN Stack', 'Figma'].map((skill) => (
                   <div key={skill} className="flex items-center gap-4 p-4 bg-slate-800 rounded-lg">
                     <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
                     <span>{skill}</span>
@@ -1032,6 +715,69 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
+
+        {/* Project 7 */}
+        <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+        <div className="relative">
+        <img 
+            src={require('./UI UX .jpeg')} 
+            alt="Project Thumbnail" 
+            className="w-full h-48 object-cover"
+          />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div className="p-6">
+          <h3 className="text-xl font-bold mb-3 text-cyan-400">
+          Figma Project 1
+          </h3>
+          <p className="text-gray-300 mb-4">
+          Explore my collection of UI/UX designs crafted with Figma, showcasing a diverse range of projects, from web applications to mobile interfaces. Each design emphasizes user-centric experiences, intuitive navigation, and modern aesthetics. These projects reflect my passion for creativity, attention to detail, and commitment to delivering exceptional user experiences.
+          </p>
+          <div className="flex space-x-4">
+            <a 
+              href="https://www.figma.com/team_invite/redeem/zFPdf8Btnuemb9jamSTpE3" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-cyan-400 text-gray-900 px-4 py-2 rounded-md hover:bg-cyan-500 transition duration-300"
+            >
+              View Projects
+            </a>
+            
+          </div>
+        </div>
+      </div>
+
+        {/* Project 7 */}
+        <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+        <div className="relative">
+        <img 
+            src={require('./ui.jpeg')} 
+            alt="Project Thumbnail" 
+            className="w-full h-48 object-cover"
+          />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div className="p-6">
+          <h3 className="text-xl font-bold mb-3 text-cyan-400">
+          Figma Project 2
+          </h3>
+          <p className="text-gray-300 mb-4">
+          Explore my collection of UI/UX designs crafted with Figma, showcasing a diverse range of projects, from web applications to mobile interfaces. Each design emphasizes user-centric experiences, intuitive navigation, and modern aesthetics. These projects reflect my passion for creativity, attention to detail, and commitment to delivering exceptional user experiences.
+          </p>
+          <div className="flex space-x-4">
+            <a 
+              href="https://www.figma.com/team_invite/redeem/MD6WvmXuG0WyYpgIpBKBcS" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-cyan-400 text-gray-900 px-4 py-2 rounded-md hover:bg-cyan-500 transition duration-300"
+            >
+              View Projects
+            </a>
+            
+          </div>
+        </div>
+      </div>
+
     </div>
 
     {/* All Projects Button */}
