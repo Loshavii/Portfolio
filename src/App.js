@@ -281,9 +281,9 @@ const Portfolio = () => {
                 className="relative"
               >
                 <img
-                  src="/api/placeholder/400/400"
+                  src={require('./loshavii.png')} 
                   alt="Profile"
-                  className="rounded-full w-full shadow-lg group-hover:shadow-cyan-400/50 transition-all duration-300"
+                  className="rounded-full w-auto h-auto object-cover shadow-lg group-hover:shadow-cyan-400/50 transition-all duration-300"
                 />
                 <div className="absolute inset-0 bg-cyan-400/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </motion.div>
@@ -311,11 +311,11 @@ const Portfolio = () => {
             className="flex-1 max-w-md"
           >
             <motion.img
-              src="/api/placeholder/400/400"
+              src={require('./loshavii.png')} 
               alt="About"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="rounded-full w-full shadow-lg shadow-cyan-400/20 transition-transform duration-300"
+              className="rounded-full w-96 h-96 object-cover shadow-lg shadow-cyan-400/20 transition-transform duration-300"
             />
           </motion.div>
           <motion.div 
