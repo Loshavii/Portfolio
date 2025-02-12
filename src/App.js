@@ -505,7 +505,7 @@ const Portfolio = () => {
           </p>
           <div className="flex space-x-4">
             <a 
-              href="https://your-project-live-link.com" 
+              href="https://fitzhore.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-cyan-400 text-gray-900 px-4 py-2 rounded-md hover:bg-cyan-500 transition duration-300"
@@ -513,7 +513,7 @@ const Portfolio = () => {
               Live Demo
             </a>
             <a 
-              href="https://github.com/yourusername/project-repo" 
+              href="https://github.com/Loshavii/Fitzhore" 
               target="_blank" 
               rel="noopener noreferrer"
               className="border border-cyan-400 text-cyan-400 px-4 py-2 rounded-md hover:bg-cyan-400 hover:text-gray-900 transition duration-300"
@@ -543,7 +543,7 @@ const Portfolio = () => {
           </p>
           <div className="flex space-x-4">
             <a 
-              href="https://your-portfolio-link.com" 
+              href="https://portfolioloshavii.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-cyan-400 text-gray-900 px-4 py-2 rounded-md hover:bg-cyan-500 transition duration-300"
@@ -551,7 +551,7 @@ const Portfolio = () => {
               Live Demo
             </a>
             <a 
-              href="https://github.com/yourusername/portfolio-repo" 
+              href="https://github.com/Loshavii/portfolio" 
               target="_blank" 
               rel="noopener noreferrer"
               className="border border-cyan-400 text-cyan-400 px-4 py-2 rounded-md hover:bg-cyan-400 hover:text-gray-900 transition duration-300"
@@ -581,7 +581,7 @@ const Portfolio = () => {
           </p>
           <div className="flex space-x-4">
             <a 
-              href="https://your-task-app-link.com" 
+              href="https://live-streaming-app-delta.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-cyan-400 text-gray-900 px-4 py-2 rounded-md hover:bg-cyan-500 transition duration-300"
@@ -589,7 +589,7 @@ const Portfolio = () => {
               Live Demo
             </a>
             <a 
-              href="https://github.com/yourusername/task-app-repo" 
+              href="https://github.com/Loshavii/live-Streaming-app" 
               target="_blank" 
               rel="noopener noreferrer"
               className="border border-cyan-400 text-cyan-400 px-4 py-2 rounded-md hover:bg-cyan-400 hover:text-gray-900 transition duration-300"
@@ -621,7 +621,7 @@ const Portfolio = () => {
           </p>
           <div className="flex space-x-4">
             <a 
-              href="https://your-project-live-link.com" 
+              href="https://chatappfrontend-six.vercel.app/login" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-cyan-400 text-gray-900 px-4 py-2 rounded-md hover:bg-cyan-500 transition duration-300"
@@ -629,7 +629,7 @@ const Portfolio = () => {
               Live Demo
             </a>
             <a 
-              href="https://github.com/yourusername/project-repo" 
+              href="https://github.com/Loshavii/chatappfrontend" 
               target="_blank" 
               rel="noopener noreferrer"
               className="border border-cyan-400 text-cyan-400 px-4 py-2 rounded-md hover:bg-cyan-400 hover:text-gray-900 transition duration-300"
@@ -659,7 +659,7 @@ const Portfolio = () => {
           </p>
           <div className="flex space-x-4">
             <a 
-              href="https://your-portfolio-link.com" 
+              href="https://quizapp-nine-psi.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-cyan-400 text-gray-900 px-4 py-2 rounded-md hover:bg-cyan-500 transition duration-300"
@@ -667,7 +667,7 @@ const Portfolio = () => {
               Live Demo
             </a>
             <a 
-              href="https://github.com/yourusername/portfolio-repo" 
+              href="https://github.com/Loshavii/quizapp" 
               target="_blank" 
               rel="noopener noreferrer"
               className="border border-cyan-400 text-cyan-400 px-4 py-2 rounded-md hover:bg-cyan-400 hover:text-gray-900 transition duration-300"
@@ -697,7 +697,7 @@ const Portfolio = () => {
           </p>
           <div className="flex space-x-4">
             <a 
-              href="https://your-task-app-link.com" 
+              href="https://foodieapp-gamma.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-cyan-400 text-gray-900 px-4 py-2 rounded-md hover:bg-cyan-500 transition duration-300"
@@ -705,7 +705,7 @@ const Portfolio = () => {
               Live Demo
             </a>
             <a 
-              href="https://github.com/yourusername/task-app-repo" 
+              href="https://github.com/Loshavii/foodieapp" 
               target="_blank" 
               rel="noopener noreferrer"
               className="border border-cyan-400 text-cyan-400 px-4 py-2 rounded-md hover:bg-cyan-400 hover:text-gray-900 transition duration-300"
